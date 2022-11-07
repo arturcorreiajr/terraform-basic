@@ -1,15 +1,15 @@
 provider "aws" {
   alias = "virginia"
   region  = "us-east-1"
-  access_key = aws_secret_key
-  secret_key = aws_access_key
+  access_key = "${env.aws_secret_key}"
+  secret_key = "${env.aws_access_key}"
 }
 
 provider "aws" {
   alias = "ohio"
   region  = "us-east-2"
-  access_key = aws_secret_key
-  secret_key = aws_access_key
+  access_key = "${env.aws_secret_key}"
+  secret_key = "${env.aws_access_key}"
 }
 
 terraform {
@@ -21,3 +21,4 @@ terraform {
   }
 }
 
+// git add . && git commit -m "first commit" && git push
