@@ -3,9 +3,3 @@ variable "image_id" {
     default = "ami_099720109477"
     description = "Id da imagem da maquina"
 }
-variable "AWS_ACCESS_KEY" {
-  type = string
-}
-variable "AWS_SECRET_KEY" {
-  type = string
-}
